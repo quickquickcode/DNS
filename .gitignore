@@ -1,0 +1,40 @@
+# 操作系统和编辑器配置
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+desktop.ini
+Thumbs.db
+
+# Python 缓存和依赖
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.env
+.venv
+venv/
+01源文件
+
+# 生成的拓扑和工作流文件
+*转换后版本.json
+*上传.json
+/06/
+
+# 日志和报告文件
+*.log
+*.ini
+
+# 大型文件和压缩包
+*.rar
+*.zip
+*.gz
+
+# 临时测试文件
+test_path_intellisense.py

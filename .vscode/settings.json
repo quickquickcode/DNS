@@ -1,0 +1,56 @@
+{
+    // Path Intellisense 配置 - 专门为Python优化
+    "path-intellisense.autoTriggerNextSuggestion": true,
+    "path-intellisense.showHiddenFiles": false,
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "path-intellisense.absolutePathToWorkspace": true,
+    
+    // 为Python文件启用路径映射
+    "path-intellisense.mappings": {
+        "@/01源文件": "${workspaceFolder}/01源文件",
+        "@/02转译": "${workspaceFolder}/02转译",
+        "@/03生成模板": "${workspaceFolder}/03生成模板",
+        "@/04生成脚本": "${workspaceFolder}/04生成脚本",
+        "./": "${workspaceFolder}/",
+        "../": "${workspaceFolder}/../"
+    },
+    
+    // Python 文件专用配置 - 启用字符串中的路径补全
+    "[python]": {
+        "editor.quickSuggestions": {
+            "strings": true,
+            "comments": false,
+            "other": true
+        },
+        "editor.suggest.insertMode": "insert",
+        "editor.wordBasedSuggestions": "off"
+    },
+    
+    // Python 相关配置
+    "python.defaultInterpreterPath": "python",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.extraPaths": [
+        "./01源文件",
+        "./02转译",
+        "./03生成模板",
+        "./04生成脚本"
+    ],
+    
+    // 文件关联配置
+    "files.associations": {
+        "*.py": "python"
+    },
+    
+    // 全局智能提示配置
+    "editor.quickSuggestions": {
+        "strings": true,
+        "comments": false,
+        "other": true
+    },
+    
+    // IntelliSense 配置
+    "editor.suggest.insertMode": "insert",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}
